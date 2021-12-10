@@ -32,10 +32,7 @@ export class UserController {
               }
             },
             (error) => {
-              throw new HttpException(
-                error.response.statusText,
-                error.response.status,
-              );
+              console.log(error);
             },
           );
         })

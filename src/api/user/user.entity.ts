@@ -5,11 +5,13 @@ export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ unique: true })
   login: string;
 
   @Column({ nullable: true })
   avatar_url: string;
+  @Column({ nullable: true })
+  type: string;
 
   @Column({ nullable: true })
   gravatar_id: string;

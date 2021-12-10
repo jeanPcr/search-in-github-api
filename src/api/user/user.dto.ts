@@ -1,6 +1,7 @@
 export interface UsersDTO {
   id: number;
   login: string;
+  type: string;
   avatar_url: string;
   gravatar_id: string;
   url: string;
